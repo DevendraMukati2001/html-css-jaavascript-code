@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .container{
+            background-color: beige;
+            border: 5px solid black;
+            margin:2px;
+            padding: 2px;
+           display: flex;
+            
+
+        }
+        @media (min-width:640px) {
+            .container{
+                flex-direction: row;
+
+            }
+        }
+        @media (max-width:640px){
+            .container{
+                flex-direction: column;
+  
+             }
+        }
+        .box{
+            --primary-color:brown;
+            width: 200px;
+            height: 150px;
+            border: 1px solid brown;
+            margin: 2px;
+            padding: 2px;
+            display: flex;
+            flex-direction:row;
+            box-shadow: 60px -15px 5px black indigo;
+            box-shadow: 10px 15px 40px var(--primary-color) !important;
+        }
+        #box1{
+            background-color: rgb(255, 255, 0);
+            border: 1px solid yellow;
+            text-shadow: 2px 3px 4px red;
+            text-shadow:red 0 -2px;
+            color:aqua;
+            font-size: 5em;
+            overflow: auto;
+        }
+        #box2{
+            background-color: rgb(140, 0, 255);
+            align-self: center;
+        }
+        #box3{
+            background-color: rgb(0, 162, 255);
+        }
+        #box4{
+            background-color: red;
+            order:-1;
+            flex-basis: 400px;
+        }
+        .red{
+            text-shadow: red 0 -2px ;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">box1</div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+    </div>
+    <p class="red">
+        semNTtraJdaif77LhUYZG09z7VX6BcJqVs9ysJSD1GWFT5AOM1i6jm029NwTP3SOkdMaKzSPbg8ls
+    </p>
+
+</body>
+</html>

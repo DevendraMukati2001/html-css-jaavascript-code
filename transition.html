@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+           width: 100px;
+           height: 100px;
+           background-color: beige;
+           position: relative;
+        }
+        .box{
+            height: 400px;
+            width: 400px;
+            background-color: beige;
+            border:1px solid red;
+            /* transition-property: all;
+            transition-duration: 4s;
+            position: absolute;
+            transition-delay: 0s;
+            transition-timing-function: linear; */
+            transition:width 2s,height 5s;
+        
+            top:0;
+            left:100;
+        }
+        .box:focus{
+            background-color: red !important;
+        }
+        .box:hover{
+            width:1200px;
+            background-color: aqua;
+        }
+        .box1{
+            height: 400px;
+            width: 400px;
+            position: absolute;
+            background-color: beige;
+            border:1px solid red;
+            transition-property: all;
+            transition-duration: 4s;
+            transition-delay: 0s;
+            transition-timing-function: linear;
+            bottom:100;
+            right:200;
+            
+        }
+        .box1:hover{
+            width:1200px;
+            background-color: rgb(255, 0, 119);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="box">
+
+    </div>
+    <div class="box1">
+
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><bdo dir="rtl">&#128565;sdbgh</bdo></h1>
+    <button type="button" onclick="alert('this is canvas page')">click me</button>
+    <canvas id="mycanvas" widht="500" height="500"></canvas>
+    <script>
+        const canvas= document.getElementById('mycanvas');
+        const ctx=canvas.getContext('2d');
+        ctx.fillStyle='blue';
+        ctx.fillRect(50,50,40,100);
+        ctx.beginPath();
+        ctx.arc(300,100,100,0,2*Math.PI);
+        ctx.fillStyle='green';
+        ctx.fill();
+        ctx.beginPath();
+        ctx.moveTo(200,300);
+        ctx.lineTo(300,400);
+        ctx.lineTo(100,400);
+        ctx.closePath();    
+        ctx.fillStyle='yellow';
+        ctx.fill();
+        
+   </script>
+        
+</body>
+</html>
